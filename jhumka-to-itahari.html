@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jhumka to Itahari - Distance, Route, Bus, Car, Bike & Travel Time</title>
+
+<meta name="description" content="Jhumka to Itahari travel guide with road distance, route, estimated travel time by car, motorbike, bus and Magic/tempo, plus direct Google Maps directions.">
+
+<link rel="canonical" href="https://eakrajrai069-sys.github.io/jhumka-guide/jhumka-to-itahari.html">
+
+<style>
+:root{
+  --bg:#f7f8f5;
+  --green:#174d3d;
+  --dark:#10372c;
+  --gold:#c6923d;
+  --text:#50605a;
+  --heading:#18251f;
+  --white:#fff;
+  --border:#e2e8e3;
+  --soft:#eaf3ee;
+  --gold-soft:#f8f4e9;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.75;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1100px,92%);margin:auto}
+
+header{
+  background:#fff;
+  border-bottom:1px solid var(--border);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+.nav{
+  min-height:74px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo{
+  font-size:1.3rem;
+  font-weight:900;
+  color:var(--green);
+}
+.logo span{
+  display:block;
+  font-size:.68rem;
+  color:#78837d;
+  font-weight:500;
+}
+nav{display:flex;gap:22px}
+nav a{font-weight:700;font-size:.9rem}
+nav a:hover{color:var(--green)}
+
+.hero{
+  padding:100px 0 70px;
+  background:linear-gradient(135deg,#e7f2ed,#f7f8f5);
+}
+.eyebrow{
+  color:var(--gold);
+  text-transform:uppercase;
+  font-size:.75rem;
+  font-weight:900;
+  letter-spacing:1.4px;
+  margin-bottom:8px;
+}
+.hero h1{
+  font-size:clamp(2.5rem,5vw,4.2rem);
+  color:var(--heading);
+  line-height:1.1;
+}
+.hero p{margin-top:14px;max-width:780px}
+
+section{padding:60px 0}
+.article{
+  background:#fff;
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 12px 35px rgba(20,50,40,.08);
+}
+
+.route-summary{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-bottom:35px;
+}
+.summary-card{
+  background:var(--soft);
+  padding:22px;
+  border-radius:15px;
+  text-align:center;
+  border:1px solid var(--border);
+}
+.summary-card strong{
+  display:block;
+  color:var(--heading);
+  font-size:1.3rem;
+  margin-bottom:4px;
+}
+.summary-card span{font-size:.92rem}
+
+.route-box{
+  background:var(--soft);
+  border:1px solid var(--border);
+  padding:24px;
+  border-radius:16px;
+  margin:25px 0 35px;
+}
+.route-box strong{color:var(--heading)}
+.route-line{
+  margin:10px 0 18px;
+  font-size:1.05rem;
+  color:var(--heading);
+  font-weight:800;
+}
+
+.btn-row{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--green);
+  color:#fff;
+  padding:11px 18px;
+  border-radius:9px;
+  font-weight:800;
+  transition:.2s ease;
+}
+.btn:hover{background:var(--dark);transform:translateY(-1px)}
+.btn.secondary{background:#fff;color:var(--green);border:1px solid var(--green)}
+
+h2{color:var(--heading);margin:35px 0 10px;font-size:1.9rem}
+h3{color:var(--heading);margin:25px 0 8px}
+
+.transport-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+  margin-top:25px;
+}
+.transport{
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:24px;
+  background:#fff;
+}
+.transport h3{margin-top:0;color:var(--green);font-size:1.3rem}
+.time{
+  margin:14px 0;
+  padding:12px 14px;
+  background:var(--soft);
+  border-radius:9px;
+  color:var(--heading);
+  font-weight:800;
+}
+.time span{font-weight:400;color:var(--text)}
+
+.notice{
+  background:var(--gold-soft);
+  border-left:4px solid var(--gold);
+  padding:20px;
+  border-radius:10px;
+  margin:30px 0;
+}
+
+.faq{margin-top:45px}
+.faq h2{margin-bottom:20px}
+.faq h3{color:var(--green);margin-top:20px;margin-bottom:5px}
+
+footer{
+  background:var(--dark);
+  color:#dce9e3;
+  padding:35px 0;
+  margin-top:30px;
+}
+
+@media(max-width:700px){
+  nav{display:none}
+  .route-summary{grid-template-columns:1fr}
+  .transport-grid{grid-template-columns:1fr}
+  .article{padding:25px}
+  .hero{padding:75px 0 55px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="index.html">
+      JHUMKA GUIDE
+      <span>Your local guide to Jhumka, Sunsari</span>
+    </a>
+
+    <nav>
+      <a href="index.html">Explore</a>
+      <a href="places-in-jhumka.html">Places</a>
+      <a href="cafes-in-jhumka.html">Directory</a>
+      <a href="how-to-reach-jhumka.html">Travel</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">Travel Route</div>
+    <h1>Jhumka to Itahari</h1>
+    <p>
+      Distance, road route, bus and local transport options, estimated
+      travel time by car and motorbike, and direct Google Maps directions.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <article class="article">
+
+      <div class="route-summary">
+        <div class="summary-card">
+          <strong>About 9 km</strong>
+          <span>Road distance</span>
+        </div>
+        <div class="summary-card">
+          <strong>About 10 min</strong>
+          <span>Fast driving estimate</span>
+        </div>
+        <div class="summary-card">
+          <strong>Bus • Car • Bike</strong>
+          <span>Local travel options</span>
+        </div>
+      </div>
+
+      <div class="route-box">
+        <strong>Jhumka → Itahari</strong>
+        <div class="route-line">Jhumka → Mahendra Highway (H01) → Itahari</div>
+        <p>
+          Jhumka and Itahari are connected by the East–West/Mahendra Highway.
+          The exact route and distance can change slightly depending on your
+          starting point in Jhumka and your destination in Itahari.
+        </p>
+
+        <div class="btn-row">
+          <a class="btn"
+             href="https://www.google.com/maps/dir/?api=1&origin=Jhumka%2C%20Ramdhuni%2C%20Sunsari%2C%20Nepal&destination=Itahari%2C%20Sunsari%2C%20Nepal&travelmode=driving"
+             target="_blank" rel="noopener noreferrer">
+             📍 Open Jhumka to Itahari Directions
+          </a>
+
+          <a class="btn secondary"
+             href="https://www.google.com/maps/search/?api=1&query=Jhumka%2C%20Ramdhuni%2C%20Sunsari%2C%20Nepal"
+             target="_blank" rel="noopener noreferrer">
+             View Jhumka
+          </a>
+
+          <a class="btn secondary"
+             href="https://www.google.com/maps/search/?api=1&query=Itahari%2C%20Sunsari%2C%20Nepal"
+             target="_blank" rel="noopener noreferrer">
+             View Itahari
+          </a>
+        </div>
+      </div>
+
+      <h2>Jhumka to Itahari Distance</h2>
+      <p>
+        The road distance from Jhumka to Itahari is approximately <strong>9 km</strong>.
+        A published route estimate gives about 9 km of driving distance and around
+        9–10 minutes of driving time in favorable conditions. Your actual distance
+        can vary depending on the exact point where you start in Jhumka and where
+        you finish in Itahari.
+      </p>
+
+      <h2>Jhumka to Itahari Route</h2>
+      <p>
+        The normal road connection is toward Itahari using the Mahendra Highway
+        (East–West Highway / H01). Jhumka is on the Mahendra Highway corridor in
+        Sunsari, and Itahari is a major road junction in the same corridor.
+      </p>
+
+      <p style="margin-top:12px">
+        For a live route, traffic information and your exact starting point,
+        use the Google Maps directions button above. Google Maps can automatically
+        adjust the route when traffic, construction or other road conditions change.
+      </p>
+
+      <h2>Jhumka to Itahari by Bus</h2>
+      <p>
+        Local public transport is the practical low-cost option for this short trip.
+        Jhumka has a western-side bus stand on the Mahendra Highway, and Itahari has
+        an established bus park. Local buses and other public vehicles may not follow
+        a fixed online timetable, so departure frequency can change during the day.
+      </p>
+
+      <div class="time">
+        Estimated bus/local-public-transport time: <span>about 20–35 minutes, depending on stops, traffic and waiting time.</span>
+      </div>
+
+      <p>
+        For the latest departure, ask at the Jhumka bus stand for a vehicle going
+        toward Itahari and confirm the fare before boarding. This page does not
+        publish a fixed fare because a current route-specific fare was not reliably
+        available online.
+      </p>
+
+      <a class="btn"
+         href="https://www.google.com/maps/dir/?api=1&origin=Jhumka%2C%20Ramdhuni%2C%20Sunsari%2C%20Nepal&destination=Itahari%20Bus%20Park%2C%20Itahari%2C%20Nepal&travelmode=transit"
+         target="_blank" rel="noopener noreferrer">
+         🚌 Check Public-Transport Route in Google Maps
+      </a>
+
+      <h2>Jhumka to Itahari by Car</h2>
+      <p>
+        By private car, the trip is short. The road distance is about 9 km and a
+        published driving estimate is around 9–10 minutes in favorable conditions.
+        In normal daytime traffic, allow extra time for intersections, town traffic
+        and stops.
+      </p>
+
+      <div class="time">
+        Practical car estimate: <span>about 10–20 minutes.</span>
+      </div>
+
+      <a class="btn"
+         href="https://www.google.com/maps/dir/?api=1&origin=Jhumka%2C%20Ramdhuni%2C%20Sunsari%2C%20Nepal&destination=Itahari%2C%20Sunsari%2C%20Nepal&travelmode=driving"
+         target="_blank" rel="noopener noreferrer">
+         🚗 Open Driving Directions
+      </a>
+
+      <h2>Jhumka to Itahari by Motorbike</h2>
+      <p>
+        A motorbike can cover the route quickly because the distance is short.
+        Riders should allow for traffic through built-up areas and should not use
+        the fastest possible map time as a guarantee.
+      </p>
+
+      <div class="time">
+        Practical motorbike estimate: <span>about 10–18 minutes.</span>
+      </div>
+
+      <a class="btn"
+         href="https://www.google.com/maps/dir/?api=1&origin=Jhumka%2C%20Ramdhuni%2C%20Sunsari%2C%20Nepal&destination=Itahari%2C%20Sunsari%2C%20Nepal&travelmode=driving"
+         target="_blank" rel="noopener noreferrer">
+         🏍️ Open Route in Google Maps
+      </a>
+
+      <h2>Jhumka to Itahari by Magic / Tempo</h2>
+      <p>
+        Shared three-wheelers and other local public vehicles can be useful for
+        short trips around the Jhumka–Itahari area. Availability, waiting time and
+        the exact stopping pattern can vary, so there is no single reliable travel
+        time for every trip.
+      </p>
+
+      <div class="time">
+        Practical Magic/tempo estimate: <span>about 15–30 minutes including local stops or waiting time.</span>
+      </div>
+
+      <h2>Travel Time from Jhumka to Itahari</h2>
+      <p>
+        For planning purposes, use these approximate one-way times:
+      </p>
+
+      <div class="transport-grid">
+        <div class="transport">
+          <h3>🚗 Car</h3>
+          <div class="time">10–20 minutes</div>
+          <p>Usually the quickest door-to-door option, subject to traffic.</p>
+        </div>
+
+        <div class="transport">
+          <h3>🏍️ Motorbike</h3>
+          <div class="time">10–18 minutes</div>
+          <p>Short route with flexible movement, but traffic and safety still matter.</p>
+        </div>
+
+        <div class="transport">
+          <h3>🚌 Bus</h3>
+          <div class="time">20–35 minutes</div>
+          <p>Allow extra time for waiting, passenger stops and traffic.</p>
+        </div>
+
+        <div class="transport">
+          <h3>🛺 Magic / Tempo</h3>
+          <div class="time">15–30 minutes</div>
+          <p>Timing varies with waiting, shared passengers and intermediate stops.</p>
+        </div>
+      </div>
+
+      <div class="notice">
+        <strong>Important:</strong>
+        The times above are practical planning estimates, not live traffic forecasts.
+        Weather, road works, congestion, vehicle stops and your exact start/end points
+        can make the trip longer. Check Google Maps immediately before travelling.
+      </div>
+
+      <h2>Map and Directions</h2>
+      <p>
+        Use the button below for a live Jhumka-to-Itahari route. Once Google Maps opens,
+        you can choose the starting point, destination, travel mode and current traffic
+        conditions.
+      </p>
+
+      <a class="btn"
+         href="https://www.google.com/maps/dir/?api=1&origin=Jhumka%2C%20Ramdhuni%2C%20Sunsari%2C%20Nepal&destination=Itahari%2C%20Sunsari%2C%20Nepal&travelmode=driving"
+         target="_blank" rel="noopener noreferrer">
+         🗺️ Open Jhumka to Itahari in Google Maps
+      </a>
+
+      <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>How far is Itahari from Jhumka?</h3>
+        <p>
+          The approximate road distance is <strong>9 km</strong>. The exact distance
+          depends on the specific starting point in Jhumka and destination in Itahari.
+        </p>
+
+        <h3>How long does it take from Jhumka to Itahari by car?</h3>
+        <p>
+          A published route estimate is around <strong>9–10 minutes</strong> in favorable
+          conditions. A practical planning range is about <strong>10–20 minutes</strong>
+          depending on traffic and stops.
+        </p>
+
+        <h3>How long does it take from Jhumka to Itahari by bike?</h3>
+        <p>
+          A practical estimate is about <strong>10–18 minutes</strong>. Actual time depends
+          on traffic, road conditions and your exact starting and ending points.
+        </p>
+
+        <h3>How long does a bus take from Jhumka to Itahari?</h3>
+        <p>
+          Allow roughly <strong>20–35 minutes</strong> for a local bus or similar public
+          transport, including stops and possible waiting time. Online schedules are
+          not consistently published for this short local route.
+        </p>
+
+        <h3>How long does a Magic or tempo take?</h3>
+        <p>
+          Around <strong>15–30 minutes</strong> is a reasonable planning range because
+          shared vehicles can stop for passengers and may require waiting before departure.
+        </p>
+
+        <h3>What is the route from Jhumka to Itahari?</h3>
+        <p>
+          The main road connection follows the Mahendra Highway (H01) toward Itahari.
+          Open Google Maps for the live route from your exact location.
+        </p>
+
+        <h3>Can I get live directions from Jhumka to Itahari?</h3>
+        <p>
+          Yes. Use the Google Maps button on this page to open live driving directions.
+        </p>
+      </div>
+
+      <h2>Related Travel Guide</h2>
+      <p>
+        <a class="btn secondary" href="how-to-reach-jhumka.html">
+          How to Reach Jhumka →
+        </a>
+      </p>
+
+    </article>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2026 Jhumka Guide</div>
+</footer>
+
+</body>
+</html>
