@@ -273,8 +273,9 @@
 
 <nav aria-label="Main navigation">
   <div class="wrap nav-inner">
-    <a class="brand" href="#home">JHUMKA GUIDE</a>
+    <a class="brand" href="index.html">JHUMKA GUIDE</a>
     <div class="nav-links">
+      <a href="index.html">Home</a>
       <a href="#explore">Explore</a>
       <a href="#places">Places</a>
       <a href="#directory">Directory</a>
@@ -326,6 +327,9 @@
           This guide brings together practical information about where Jhumka is, how it connects with nearby cities,
           what kinds of local information visitors can look for, and how to verify important details before travelling.
         </p>
+        <div class="actions" style="margin-top:20px">
+          <a class="btn btn-main" href="https://www.google.com/maps/search/?api=1&query=Jhumka%2C+Ramdhuni%2C+Sunsari%2C+Nepal" target="_blank" rel="noopener noreferrer">Open Jhumka in Google Maps →</a>
+        </div>
 
         <div class="article-meta">
           <span>📍 Jhumka, Sunsari, Nepal</span>
@@ -604,16 +608,28 @@
           <span class="tag">Guide</span>
           <h3>How to Reach Jhumka</h3>
           <p>Explain the route from major nearby cities, road access, landmarks and practical arrival tips.</p>
+          <div class="actions" style="margin-top:18px">
+            <a class="btn btn-main" href="how-to-reach-jhumka.html">Open Guide →</a>
+            <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&query=Jhumka%2C+Ramdhuni%2C+Sunsari%2C+Nepal" target="_blank" rel="noopener noreferrer">Open in Maps →</a>
+          </div>
         </article>
         <article class="card">
           <span class="tag">Nearby</span>
           <h3>Jhumka to Itahari</h3>
           <p>Create a route guide with verified distance, approximate travel time and transport options.</p>
+          <div class="actions" style="margin-top:18px">
+            <a class="btn btn-main" href="jhumka-to-itahari.html">Open Guide →</a>
+            <a class="btn btn-light" href="https://www.google.com/maps/dir/?api=1&origin=Jhumka%2C+Ramdhuni%2C+Sunsari%2C+Nepal&destination=Itahari%2C+Sunsari%2C+Nepal" target="_blank" rel="noopener noreferrer">Open Route in Maps →</a>
+          </div>
         </article>
         <article class="card">
           <span class="tag">Nearby</span>
           <h3>Jhumka to Inaruwa</h3>
           <p>Build a useful local route page with up-to-date road and transport information.</p>
+          <div class="actions" style="margin-top:18px">
+            <a class="btn btn-main" href="jhumka-to-inaruwa.html">Open Guide →</a>
+            <a class="btn btn-light" href="https://www.google.com/maps/dir/?api=1&origin=Jhumka%2C+Ramdhuni%2C+Sunsari%2C+Nepal&destination=Inaruwa%2C+Sunsari%2C+Nepal" target="_blank" rel="noopener noreferrer">Open Route in Maps →</a>
+          </div>
         </article>
       </div>
     </div>
@@ -664,25 +680,69 @@
         <span class="eyebrow">Featured guide</span>
         <h2>Jhumka, Sunsari — a practical starting point</h2>
         <p>
-          Jhumka is a town in Sunsari District associated with Ramdhuni Municipality. Available
-          references place it between Itahari and Inaruwa, while the municipality's official site
-          is the best source for current municipal information.
+          Jhumka is a town in Sunsari District associated with Ramdhuni Municipality.
+          Available references place it between Itahari and Inaruwa, while the municipality's
+          official site is the best source for current municipal information.
         </p>
       </div>
 
       <div class="grid-3">
-        <article class="card">
-          <h3>Location</h3>
-          <p>Use this page to explain Jhumka's relationship to Ramdhuni Municipality and nearby urban areas.</p>
+
+        <!-- Location → Google Maps -->
+        <article class="card directory-card">
+          <div class="icon">📍</div>
+          <span class="tag">Location</span>
+          <h3>Find Jhumka on Maps</h3>
+          <p>
+            Open Jhumka directly in Google Maps to view its location, nearby places
+            and directions.
+          </p>
+          <div class="spacer"></div>
+          <a class="btn btn-main"
+             href="https://www.google.com/maps/search/?api=1&query=Jhumka%2C+Ramdhuni%2C+Sunsari%2C+Nepal"
+             target="_blank" rel="noopener noreferrer">
+            Open in Google Maps →
+          </a>
         </article>
-        <article class="card">
-          <h3>Local places</h3>
-          <p>Link readers to detailed place pages, maps and verified visitor information.</p>
+
+        <!-- Local Places → places-in-jhumka.html -->
+        <article class="card directory-card">
+          <div class="icon">🌿</div>
+          <span class="tag">Local Places</span>
+          <h3>
+            <a href="places-in-jhumka.html" style="text-decoration:none">
+              Places to Visit
+            </a>
+          </h3>
+          <p>
+            Explore detailed information about places, landmarks and attractions
+            around Jhumka.
+          </p>
+          <div class="spacer"></div>
+          <a class="btn btn-main" href="places-in-jhumka.html">
+            Explore Places →
+          </a>
         </article>
-        <article class="card">
-          <h3>Useful services</h3>
-          <p>Build directory pages that help residents and visitors find real local services quickly.</p>
+
+        <!-- Useful Services → Directory -->
+        <article class="card directory-card">
+          <div class="icon">🏪</div>
+          <span class="tag">Useful Services</span>
+          <h3>
+            <a href="#directory" style="text-decoration:none">
+              Local Services
+            </a>
+          </h3>
+          <p>
+            Find useful local businesses and services such as cafes, shops,
+            schools, banks and more.
+          </p>
+          <div class="spacer"></div>
+          <a class="btn btn-main" href="#directory">
+            View Directory →
+          </a>
         </article>
+
       </div>
     </div>
   </section>
@@ -741,13 +801,7 @@
       </div>
 
       <div class="card" style="margin-top:18px">
-        <h3>Editorial policy</h3>
-        <p>
-          This project should not claim official status, invent businesses or reviews, or publish
-          unverified contact information. For health, transport, opening hours, prices and other
-          time-sensitive details, confirm information before publishing.
-        </p>
-      </div>
+</div>
     </div>
   </section>
 
@@ -809,6 +863,5 @@
   search.addEventListener("input", render);
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-
 </body>
 </html>
